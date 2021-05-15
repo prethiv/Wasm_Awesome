@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Simple js app</title>
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+    <script>
+        function Webassemblyincluded(){
+            console.log("Inside web assembly included");
+            let r=WasmExports._Z10Arithmeticv()
+            console.log("Result from arithmetic function ",r);
+        }
+    </script>
+    <button onclick="Webassemblyincluded()">Call Webassembly</button>
+
+</body>
+
+</html>
